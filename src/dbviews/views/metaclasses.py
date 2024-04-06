@@ -2,7 +2,7 @@ from copy import copy, deepcopy
 
 from django.db import models
 
-from dbviews.fields import QueryField
+from dbviews.views.fields import QueryField
 
 
 class ViewModelMeta(models.base.ModelBase):

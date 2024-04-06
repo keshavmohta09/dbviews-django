@@ -1,6 +1,10 @@
 from copy import copy
 
-from dbviews.fields import QueryField
+from django.db.migrations.autodetector import (
+    MigrationAutodetector as BaseMigrationAutodetector,
+)
+from django.db.migrations.utils import resolve_relation
+
 from dbviews.operations import (
     AlterMaterializedView,
     AlterView,
@@ -10,10 +14,7 @@ from dbviews.operations import (
     DeleteView,
 )
 from dbviews.views import DbMaterializedView, DbView
-from django.db.migrations.autodetector import (
-    MigrationAutodetector as BaseMigrationAutodetector,
-)
-from django.db.migrations.utils import resolve_relation
+from dbviews.views.fields import QueryField
 
 
 class MigrationAutodetector(BaseMigrationAutodetector):

@@ -2,7 +2,7 @@ from typing import Any
 
 from django.db import connection, models
 
-from dbviews.metaclasses import ViewModelMeta
+from dbviews.views.metaclasses import ViewModelMeta
 
 
 class ViewManager(models.Manager):
