@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-dbviews"
+name = "dbviews-django"
 version = "0.1.0"
 description = "Support of database views and materialized views in django web framework."
 authors = ["Keshav Mohta <keshavmohta09@gmail.com>"]
