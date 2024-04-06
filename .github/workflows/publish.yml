@@ -17,9 +17,9 @@ jobs:
         python-version: 3.9
 
     - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python -
-        source $HOME/.poetry/env
+      uses: abatilo/actions-poetry@v2.0.0
+        with:
+          poetry-version: 1.4.0
 
     - name: Install dependencies
       run: |
