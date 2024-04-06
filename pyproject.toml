@@ -4,10 +4,13 @@ version = "0.0.1"
 description = ""
 authors = ["Keshav Mohta <keshavmohta09@gmail.com>"]
 readme = "README.md"
-packages = [{include = "django_dbviews"}]
+packages = [
+    { include = "dbviews", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+django = ">=3"
 
 
 [build-system]
