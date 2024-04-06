@@ -33,5 +33,5 @@ jobs:
       env:
         POETRY_PYPI_TOKEN: ${{ secrets.POETRY_PYPI_TOKEN }}
       run: |
-        poetry publish
+        poetry publish --username __token__ --password $POETRY_PYPI_TOKEN
 
