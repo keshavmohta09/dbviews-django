@@ -32,7 +32,7 @@ jobs:
 
     - name: Publish package
       env:
-        POETRY_PYPI_TOKEN: ${{ secrets.POETRY_PYPI_TOKEN }}
+        POETRY_PYPI_TOKEN: ${{ secrets.DBVIEWS_DJANGO_PUBLISH_TOKEN }}
       run: |
         poetry publish --username __token__ --password $POETRY_PYPI_TOKEN
 
