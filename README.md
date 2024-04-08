@@ -71,7 +71,7 @@ from .models import MyModel  # Import your models
 from .views import MyView     # Import your views  
 ```
 
-To refresh the materialized views you can refresh method.
+To refresh the materialized views you can use refresh method.
 ```python
     MyMaterializedView.refresh()
 ```
@@ -81,7 +81,7 @@ To refresh the materialized views you can refresh method.
 After defining your views, you'll need to generate migrations to apply these changes to your database schema. Use Django's `makemigrations` and `migrate` command to generate migration files:
 
 ```shell
-python manage.py makemigrations # This will all the required migrations
+python manage.py makemigrations # This will create all the required migrations
 python manage.py migrate # This will create all the views and models based on the migration
 ```
 
