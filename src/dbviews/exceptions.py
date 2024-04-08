@@ -1,0 +1,2 @@
+class IncorrectFieldNameError(ValueError):
+    pass

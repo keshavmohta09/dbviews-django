@@ -1,5 +1,3 @@
-from copy import copy, deepcopy
-
 from django.db import models
 
 from dbviews.views.fields import QueryField

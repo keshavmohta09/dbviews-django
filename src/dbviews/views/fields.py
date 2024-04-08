@@ -2,6 +2,8 @@ from typing import TYPE_CHECKING, Union
 
 from django.db.models import Field
 
+from dbviews.exceptions import IncorrectFieldNameError
+
 if TYPE_CHECKING:
     from dbviews import views
 
@@ -37,7 +39,7 @@ class QueryField(Field):
     ) -> None:
 
         if name != "view_query":
-            raise FileNotFoundError(
+            raise IncorrectFieldNameError(
                 f"Name of field should be `view_query` instead of `{name}`"
             )
 
