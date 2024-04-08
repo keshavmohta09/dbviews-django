@@ -1,3 +1,15 @@
+# dbviews-django
+
+dbviews-django is a Django package designed to simplify the management of database views and materialized views within Django projects. With dbviews-django, you can seamlessly integrate database views into your Django applications, allowing for easier maintenance and management of complex data structures.
+
+## Key Features
+
+- Define database views and materialized views using Django's migration framework.
+- Integrate views seamlessly with your existing Django models and queries.
+- Easily manage and update views alongside your Django application code.
+- Support for both traditional database views and materialized views for improved performance.
+- Compatible with Python 3.9 or higher and Django 4.x.
+
 ## Usage
 
 Discover how to define and utilize database views and materialized views seamlessly within your Django project.
